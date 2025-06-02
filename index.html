@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sinhala Converter</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f7f9fc;
+      padding: 10px;
+      margin: 0;
+      color: #333;
+      width: 100%;
+    }
+    h2 , h6 {
+      text-align: center;
+      margin-bottom: 3px;
+      color: #2c3e50;
+    }
+    textarea {
+      width: 100%;
+      height: 40px;
+      padding: 12px;
+      font-size: 14px;
+      margin-bottom:5px;
+      resize: none;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+    button {
+      height: 30px;
+      width: 50% ;
+      padding: 8px 15px;
+      font-size: 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-right: 10px;
+      background-color: #3498db;
+      color: white;
+      transition: background-color 0.2s;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+    #copyBtn {
+      background-color: #2ecc71;
+    }
+    #copyBtn:hover {
+      background-color: #27ae60;
+    }
+    .buttons {
+      width : 100% ;
+      display: flex;
+      justify-content: flex-end;
+    }
+    #toast {
+      position: fixed;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #333;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 13px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+  <h2>Singlish to FM Abhaya Converter</h2>
+  <h6>by LankaTech Innovations</h6>
+  <textarea id="phonicInput" placeholder="Type Sinhala phonetic text here..."></textarea>
+  <textarea id="convertedText" readonly placeholder="Converted FM Abhaya legacy font text will appear here..."></textarea>
+  <div class="buttons">
+    <button id="btnConvert">Convert</button>
+    <button id="insertBtn">Insert</button>
+  </div>
+
+  <div id="toast"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>

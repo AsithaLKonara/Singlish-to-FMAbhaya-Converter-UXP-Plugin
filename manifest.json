@@ -1,0 +1,34 @@
+{
+  "manifestVersion": 5,
+  "id": "Playground_com.example.sinhala.converter",
+  "name": "Sinhala FM Abhaya Converter",
+  "version": "1.0.0",
+  "main": "index.html",
+  "permissions": {
+    "clipboard": {
+      "read": "true",
+      "write": "true"
+    }
+  },
+  "host": {
+    "app": "PS",
+    "minVersion": "22.0.0"
+  },
+  "uiEntryPoints": [
+    {
+      "type": "panel",
+      "label": "Sinhala Converter",
+      "panelId": "sinhalaConverter",
+      "menuLabel": "Sinhala Converter",
+      "icon": "icon.png",
+      "geometry": {
+        "width": 400,
+        "height": 400,
+        "minWidth": 300,
+        "minHeight": 200,
+        "maxWidth": 800,
+        "maxHeight": 600
+      }
+    }
+  ]
+}
